@@ -46,7 +46,11 @@
   .picker-item.near img.fude-digit { opacity:0.55; }
   .picker-item.far img.fude-digit { opacity:0.15; height:26px; }
   .picker-item img.fude-digit[alt="7"],
-  .countdown-digit-img[alt="7"] { filter:brightness(0) invert(1); }
+  .countdown-digit-img[alt="7"] {
+    filter:brightness(0) invert(1)
+      drop-shadow(0.2px 0 0 #fff) drop-shadow(-0.2px 0 0 #fff)
+      drop-shadow(0 0.2px 0 #fff) drop-shadow(0 -0.2px 0 #fff);
+  }
 
   /* Brush digit images in countdown */
   .countdown-digit-img {
